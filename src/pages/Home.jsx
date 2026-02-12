@@ -20,7 +20,7 @@ const cards = [
   { title: "Ace your CBSE/ICSE results!", desc: "Highest personal attention, One teacher One student", price: "₹ 888/hr" },
   { title: "Your best bet to JEE / NEET!", desc: "Individual Attention, Maximum Results! One teacher One student", price: "₹ 1,049/hr" },
   { title: "Get tailored learning for IB & IGCSE board!", desc: "Your path to Academic Excellence!", price: "₹ 1,249/hr" },
-  { title: "Learn Java & Python with Vedantu!", desc: "From Good to Great: Improve your skills!", price: "₹ 999/hr" },
+  { title: "Learn Java & Python with Eduvion!", desc: "From Good to Great: Improve your skills!", price: "₹ 999/hr" },
 ];
 
 export default function App() {
@@ -268,7 +268,7 @@ export default function App() {
 
         <p className="max-w-3xl mx-auto text-sm md:text-base text-white/80 mb-16 leading-relaxed">
           Whether you're training staff, onboarding partners, or educating
-          customers, TalentLMS helps you deliver the right training to the right
+          customers, Eduvion helps you deliver the right training to the right
           people. No extra platforms. No back and forth.
         </p>
 
