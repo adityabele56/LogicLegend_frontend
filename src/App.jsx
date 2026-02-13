@@ -8,7 +8,7 @@ import MainLayout from "./components/MainLayout";
 
 import Home from "./pages/Home";
 import Login from "./components/Login";
-import singup from "./components/singup";
+import Signup from "./components/signup";
 
 
 export default function App() {

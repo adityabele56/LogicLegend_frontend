@@ -201,7 +201,7 @@ export default function StudyMaterials() {
 
     {/* Demo Image */}
     <img
-      src="/demo-open-form.webp" // replace with your actual image path
+      src="src/assets/Eduviondemoimg.png" // replace with your actual image path
       alt="Free Demo"
       className="relative z-10 w-[300px] sm:w-[340px] md:w-[380px] lg:w-[420px]"
     />
