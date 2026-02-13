@@ -261,15 +261,18 @@ export default function App() {
   <div className="relative max-w-7xl mx-auto px-6 text-center text-white">
 
     {/* HEADING */}
-    <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-6">
-      What Is a Learning Management System (LMS)?
-    </h2>
+   {/* HEADING */}
+<h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-6">
+  What is Eduvion?
+</h2>
 
-    {/* INTRO TEXT */}
-    <p className="max-w-3xl mx-auto text-sm md:text-base text-white/80 mb-16 leading-relaxed">
-      A Learning Management System (LMS) is a centralized digital platform used
-      to create, manage, deliver, and track educational or training programs.
-    </p>
+{/* INTRO TEXT */}
+<p className="max-w-3xl mx-auto text-sm md:text-base text-white/80 mb-16 leading-relaxed">
+  Eduvion is a modern Learning Management System designed to simplify and enhance
+  the online learning experience. It provides a centralized platform to manage
+  courses, track student progress, deliver training programs, and ensure secure
+  role-based access for students, instructors, and administrators.
+</p>
 
     {/* CARDS */}
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
