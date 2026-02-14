@@ -7,9 +7,9 @@ import MainLayout from "./components/MainLayout";
 // Pages
 
 import Home from "./pages/Home";
+
 import Login from "./components/Login";
 import Signup from "./components/signup";
-
 
 export default function App() {
   const [showApp, setShowApp] = useState(false);
@@ -33,6 +33,10 @@ export default function App() {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
+
+          {/* <Route path="/singup" element={<Singup/>} />
+          */}
+
           <Route path="/login" element={<Login />} />
           <Route path="/Singup" element={<Signup />} />
          
