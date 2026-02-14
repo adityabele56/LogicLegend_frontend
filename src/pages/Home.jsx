@@ -16,11 +16,11 @@ const stagger = { visible: { transition: { staggerChildren: 0.18 } } };
 
 const floatAnimation = { animate: { y: [0, -12, 0] }, transition: { duration: 3, repeat: Infinity, ease: "easeInOut" } };
 
-const cards = [
+const cards = [ 
   { title: "Ace your CBSE/ICSE results!", desc: "Highest personal attention, One teacher One student", price: "₹ 888/hr" },
   { title: "Your best bet to JEE / NEET!", desc: "Individual Attention, Maximum Results! One teacher One student", price: "₹ 1,049/hr" },
   { title: "Get tailored learning for IB & IGCSE board!", desc: "Your path to Academic Excellence!", price: "₹ 1,249/hr" },
-  { title: "Learn Java & Python with Vedantu!", desc: "From Good to Great: Improve your skills!", price: "₹ 999/hr" },
+  { title: "Learn Java & Python with Eduvion!", desc: "From Good to Great: Improve your skills!", price: "₹ 999/hr" },
 ];
 
 export default function App() {
@@ -253,90 +253,111 @@ export default function App() {
             </motion.div>
           ))}
         </div>
-
-
-
 <section className="relative bg-[#062B5B] py-24 overflow-hidden">
-      {/* TOP CURVE */}
-      <div className="absolute top-0 left-0 w-full h-16 bg-white rounded-b-[100%]" />
 
-      <div className="relative max-w-7xl mx-auto px-6 text-center text-white">
-        {/* HEADING */}
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-6">
-          Training built for every audience
-        </h2>
+  {/* TOP CURVE */}
+  <div className="absolute top-0 left-0 w-full h-16 bg-white rounded-b-[100%]" />
 
-        <p className="max-w-3xl mx-auto text-sm md:text-base text-white/80 mb-16 leading-relaxed">
-          Whether you're training staff, onboarding partners, or educating
-          customers, TalentLMS helps you deliver the right training to the right
-          people. No extra platforms. No back and forth.
-        </p>
+  <div className="relative max-w-7xl mx-auto px-6 text-center text-white">
 
-        {/* CARDS */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          {/* Card 1 */}
-          <div className="text-center">
-            <div className="bg-[#D9EEFF] rounded-2xl p-4 mb-5">
-              <img
-                src="/WhatsApp Image 2026-02-03 at 4.20.23 PM.jpeg"
-                alt="Employee training"
-                className="rounded-xl w-full h-[180px] object-cover"
-              />
-            </div>
-            <h3 className="text-lg font-medium">Employee training</h3>
-          </div>
+    {/* HEADING */}
+   {/* HEADING */}
+<h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-6">
+  What is Eduvion?
+</h2>
 
-          {/* Card 2 */}
-          <div className="text-center">
-            <div className="bg-[#D9EEFF] rounded-2xl p-4 mb-5">
-              <img
-                src="/WhatsApp Image 2026-02-03 at 4.20.03 PM.jpeg"
-                alt="Onboarding training"
-                className="rounded-xl w-full h-[180px] object-cover"
-              />
-            </div>
-            <h3 className="text-lg font-medium">Onboarding training</h3>
-          </div>
+{/* INTRO TEXT */}
+<p className="max-w-3xl mx-auto text-sm md:text-base text-white/80 mb-16 leading-relaxed">
+  Eduvion is a modern Learning Management System designed to simplify and enhance
+  the online learning experience. It provides a centralized platform to manage
+  courses, track student progress, deliver training programs, and ensure secure
+  role-based access for students, instructors, and administrators.
+</p>
 
-          {/* Card 3 */}
-          <div className="text-center">
-            <div className="bg-[#D9EEFF] rounded-2xl p-4 mb-5">
-              <img
-                src="/WhatsApp Image 2026-02-03 at 4.19.47 PM.jpeg"
-                alt="Partner training"
-                className="rounded-xl w-full h-[180px] object-cover"
-              />
-            </div>
-            <h3 className="text-lg font-medium">Partner training</h3>
-          </div>
+    {/* CARDS */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
 
-          {/* Card 4 */}
-          <div className="text-center">
-            <div className="bg-[#D9EEFF] rounded-2xl p-4 mb-5">
-              <img
-                src="/WhatsApp Image 2026-02-03 at 4.20.11 PM.jpeg"
-                alt="Customer training"
-                className="rounded-xl w-full h-[180px] object-cover"
-              />
-            </div>
-            <h3 className="text-lg font-medium">Customer training</h3>
-          </div>
+      {/* Card 1 */}
+      <div className="bg-[#D9EEFF] rounded-2xl overflow-hidden shadow-md hover:scale-105 transition">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/4149/4149673.png"
+          alt="centralized management"
+          className="w-full h-40 object-contain p-6 bg-white"
+        />
+        <div className="p-6 text-center">
+          <h3 className="text-[#062B5B] font-semibold text-lg mb-2">
+            Centralized Management
+          </h3>
+          <p className="text-sm text-gray-600">
+            Manage courses, users, and content from a single platform.
+          </p>
         </div>
-
-        {/* BUTTON */}
-        <button className="bg-yellow-500 text-white px-11 py-3 rounded-full font-medium shadow-md transition-all 
-  duration-300 
- hover:bg-yellow-400 hover:text-[#062B5B]
-  hover:scale-105 ">
-          See all solutions
-        </button>
       </div>
 
-      {/* BOTTOM CURVE */}
-      <div className="absolute bottom-0 left-0 w-full h-16 bg-white rounded-t-[100%]" />
-    </section>
+      {/* Card 2 */}
+      <div className="bg-[#D9EEFF] rounded-2xl overflow-hidden shadow-md hover:scale-105 transition">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png"
+          alt="scalable learning"
+          className="w-full h-40 object-contain p-6 bg-white"
+        />
+        <div className="p-6 text-center">
+          <h3 className="text-[#062B5B] font-semibold text-lg mb-2">
+            Scalable Learning
+          </h3>
+          <p className="text-sm text-gray-600">
+            Supports thousands of learners with flexible learning methods.
+          </p>
+        </div>
+      </div>
 
+      {/* Card 3 */}
+      <div className="bg-[#D9EEFF] rounded-2xl overflow-hidden shadow-md hover:scale-105 transition">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/2920/2920277.png"
+          alt="progress tracking"
+          className="w-full h-40 object-contain p-6 bg-white"
+        />
+        <div className="p-6 text-center">
+          <h3 className="text-[#062B5B] font-semibold text-lg mb-2">
+            Progress Tracking
+          </h3>
+          <p className="text-sm text-gray-600">
+            Track attendance and performance with real-time analytics.
+          </p>
+        </div>
+      </div>
 
+      {/* Card 4 */}
+      <div className="bg-[#D9EEFF] rounded-2xl overflow-hidden shadow-md hover:scale-105 transition">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png"
+          alt="security"
+          className="w-full h-40 object-contain p-6 bg-white"
+        />
+        <div className="p-6 text-center">
+          <h3 className="text-[#062B5B] font-semibold text-lg mb-2">
+            Role-Based Security
+          </h3>
+          <p className="text-sm text-gray-600">
+            Secure role-based access for Admin, Instructor, and Students.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    {/* BUTTON */}
+    <button className="bg-[#D08700] text-white px-11 py-3 rounded-full font-medium shadow-md transition hover:bg-[#e09a1a] hover:scale-105">
+      Explore Eduvion Features
+    </button>
+
+  </div>
+
+  {/* BOTTOM CURVE */}
+  <div className="absolute bottom-0 left-0 w-full h-16 bg-white rounded-t-[100%]" />
+
+</section>
 
         {/* ================= STUDY MATERIALS ================= */}
         <div className="max-w-[90%] mx-auto">
