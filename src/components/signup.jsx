@@ -3,8 +3,9 @@ import { useState } from "react";
 export default function Signup() {
   const [formData, setFormData] = useState({
     name: "",
+    email: "",
     phone: "",
-    course: "",
+    password: "",
   });
 
   const handleChange = (e) => {
@@ -48,6 +49,20 @@ export default function Signup() {
             />
           </div>
 
+          {/* EMAIL */}
+          <div>
+            <label className="text-sm text-gray-600">Email</label>
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="Enter your email"
+              value={formData.email}
+              onChange={handleChange}
+              className="w-full mt-1 p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+
           {/* PHONE */}
           <div>
             <label className="text-sm text-gray-600">Phone Number</label>
@@ -62,24 +77,18 @@ export default function Signup() {
             />
           </div>
 
-          {/* COURSE SELECT */}
+          {/* PASSWORD */}
           <div>
-            <label className="text-sm text-gray-600">
-              Course Interested In
-            </label>
-            <select
-              name="course"
+            <label className="text-sm text-gray-600">Password</label>
+            <input
+              type="password"
+              name="password"
               required
-              value={formData.course}
+              placeholder="Enter your password"
+              value={formData.password}
               onChange={handleChange}
               className="w-full mt-1 p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
-            >
-              <option value="">Select a course</option>
-              <option value="Web Development">Web Development</option>
-              <option value="Data Science">Data Science</option>
-              <option value="UI/UX Design">UI/UX Design</option>
-              <option value="Digital Marketing">Digital Marketing</option>
-            </select>
+            />
           </div>
 
           {/* BUTTON */}

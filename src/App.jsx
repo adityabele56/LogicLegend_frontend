@@ -34,7 +34,7 @@ export default function App() {
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/singup" element={<singup />} />
+          <Route path="/Singup" element={<Signup />} />
          
         </Route>
       </Routes>

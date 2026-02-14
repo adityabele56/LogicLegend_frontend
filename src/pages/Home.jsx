@@ -16,7 +16,7 @@ const stagger = { visible: { transition: { staggerChildren: 0.18 } } };
 
 const floatAnimation = { animate: { y: [0, -12, 0] }, transition: { duration: 3, repeat: Infinity, ease: "easeInOut" } };
 
-const cards = [
+const cards = [ 
   { title: "Ace your CBSE/ICSE results!", desc: "Highest personal attention, One teacher One student", price: "₹ 888/hr" },
   { title: "Your best bet to JEE / NEET!", desc: "Individual Attention, Maximum Results! One teacher One student", price: "₹ 1,049/hr" },
   { title: "Get tailored learning for IB & IGCSE board!", desc: "Your path to Academic Excellence!", price: "₹ 1,249/hr" },
