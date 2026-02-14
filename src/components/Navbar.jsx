@@ -82,18 +82,18 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center gap-4">
           <NavLink to={"/login"}>
 
-         <button className="px-5 py-2 text-sm text-white bg-yellow-500 rounded-full hover:bg-yellow-600 transition transform hover:scale-105">
-  Login
-</button>
+            <button className="px-5 py-2 text-sm text-white bg-yellow-500 rounded-full hover:bg-yellow-600 transition transform hover:scale-105">
+              Login
+            </button>
 
           </NavLink>
-         <button className="px-5 py-2 text-sm text-white bg-yellow-500 rounded-full hover:bg-yellow-600 transition transform hover:scale-105">
-    Request a demo
-  </button>
-          <NavLink to={"/Singup"}>
           <button className="px-5 py-2 text-sm text-white bg-yellow-500 rounded-full hover:bg-yellow-600 transition transform hover:scale-105">
-            Sign up
-          </button></NavLink>
+            Request a demo
+          </button>
+          <NavLink to={"/Singup"}>
+            <button className="px-5 py-2 text-sm text-white bg-yellow-500 rounded-full hover:bg-yellow-600 transition transform hover:scale-105">
+              Sign up
+            </button></NavLink>
         </div>
 
         {/* Mobile Hamburger */}
@@ -149,17 +149,28 @@ export default function Navbar() {
               ))}
 
               {/* Mobile Buttons */}
+              {/* Mobile Buttons */}
               <div className="mt-6 flex flex-col gap-3">
-                <button className="w-full text-sm font-medium text-slate-700 hover:text-yellow-500 transition transform hover:scale-105">
-                  Login
-                </button>
+
+                <NavLink to="/login" onClick={() => setOpen(false)}>
+                <button className="w-full px-5 py-2  text-white bg-yellow-500 rounded-full hover:bg-yellow-600 transition transform hover:scale-105">
+              Login
+            </button>
+
+                </NavLink>
+
                 <button className="w-full px-4 py-2 text-sm border border-slate-300 rounded-full hover:border-yellow-500 hover:text-yellow-500 transition transform hover:scale-105">
                   Request a demo
                 </button>
-                <button className="w-full px-5 py-2 text-sm text-white bg-yellow-500 rounded-full hover:bg-yellow-600 transition transform hover:scale-105">
-                  Sign up
-                </button>
+
+                <NavLink to="/Singup" onClick={() => setOpen(false)}>
+                  <button className="w-full px-5 py-2 text-sm text-white bg-yellow-500 rounded-full hover:bg-yellow-600 transition transform hover:scale-105">
+                    Sign up
+                  </button>
+                </NavLink>
+
               </div>
+
             </div>
           </motion.div>
         )}
