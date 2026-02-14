@@ -156,8 +156,8 @@ export default function Login() {
 
           <p className="text-sm mt-5 text-center">
             Don't have an account?
-            <NavLink to={"/Signup"}>
-              <button className="ml-2 px-4 py-1 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600">
+            <NavLink to={"/Singup"}>
+              <button className="ml-2 py-1 text-black rounded-lg">
                 Signup
               </button>
             </NavLink>
