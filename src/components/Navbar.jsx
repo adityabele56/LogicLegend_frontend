@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "/eduvion-logo.jpg";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -79,15 +80,20 @@ export default function Navbar() {
 
         {/* Right Buttons */}
         <div className="hidden lg:flex items-center gap-4">
-          <button className="text-sm font-medium text-slate-700 hover:text-yellow-500 transition transform hover:scale-105">
-            Login
-          </button>
+          <NavLink to={"/login"}>
+
+         <button className="px-5 py-2 text-sm text-white bg-yellow-500 rounded-full hover:bg-yellow-600 transition transform hover:scale-105">
+  Login
+</button>
+
+          </NavLink>
           <button className="px-4 py-2 text-sm border border-slate-300 rounded-full hover:border-yellow-500 hover:text-yellow-500 transition transform hover:scale-105">
             Request a demo
           </button>
+          <NavLink to={"/Singup"}>
           <button className="px-5 py-2 text-sm text-white bg-yellow-500 rounded-full hover:bg-yellow-600 transition transform hover:scale-105">
             Sign up
-          </button>
+          </button></NavLink>
         </div>
 
         {/* Mobile Hamburger */}

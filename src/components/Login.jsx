@@ -8,6 +8,9 @@ export default function Login() {
 
   const [error, setError] = useState("");
 
+  // 👁️ show/hide password state
+  const [showPassword, setShowPassword] = useState(false);
+
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
@@ -22,9 +25,6 @@ export default function Login() {
 
     setError("");
     console.log("Login Data:", form);
-
-    // connect backend here
-    
   };
 
   return (
@@ -32,13 +32,23 @@ export default function Login() {
 
       <div className="w-[900px] bg-white rounded-2xl shadow-2xl flex overflow-hidden">
 
-        {/* LEFT SECTION */}
-        <div className="w-1/2 bg-gradient-to-r from-[#062B5B] to-blue-600 text-white flex flex-col justify-center items-center p-10">
-          <h1 className="text-4xl font-bold mb-3">Eduvion</h1>
-          <p className="text-center opacity-90">
-            Your Smart Learning Management System
-          </p>
-        </div>
+        {/* LEFT SECTION — ANIMATED IMAGE */}
+<div className="w-1/2 bg-gradient-to-r from-[#062B5B] to-blue-600 text-white flex flex-col justify-center items-center p-10">
+
+  {/* Animated GIF */}
+  <img
+    src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif"
+    alt="learning animation"
+    className="w-72 mb-6"
+  />
+
+  <h1 className="text-4xl font-bold mb-3">Eduvion</h1>
+  <p className="text-center opacity-90">
+    Your Smart Learning Management System
+  </p>
+
+</div>
+
 
         {/* RIGHT SECTION */}
         <div className="w-1/2 p-12 flex flex-col justify-center">
@@ -62,15 +72,26 @@ export default function Login() {
               className="w-full p-3 border rounded-lg focus:outline-none focus:border-blue-500"
             />
 
-            {/* PASSWORD */}
-            <input
-              type="password"
-              name="password"
-              placeholder="Password"
-              value={form.password}
-              onChange={handleChange}
-              className="w-full p-3 border rounded-lg focus:outline-none focus:border-blue-500"
-            />
+            {/* PASSWORD WITH EYE */}
+            <div className="relative">
+              <input
+                type={showPassword ? "text" : "password"}
+                name="password"
+                placeholder="Password"
+                value={form.password}
+                onChange={handleChange}
+                className="w-full p-3 border rounded-lg focus:outline-none focus:border-blue-500"
+              />
+
+              {/* Eye Button */}
+              <button
+                type="button"
+                onClick={() => setShowPassword(!showPassword)}
+                className="absolute right-3 top-3 text-gray-500"
+              >
+                {showPassword ? "🙈" : "👁️"}
+              </button>
+            </div>
 
             <button
               type="submit"
