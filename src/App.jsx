@@ -39,7 +39,23 @@ export default function App() {
 
           <Route path="/login" element={<Login />} />
           <Route path="/Singup" element={<Signup />} />
-         
+          
+          <Route path="/admin" element={<AdminLayout/>}>
+            <Route index element={<AdminDashboard/>}/>
+            <Route path="mailbox" element={<Mailbox/>}/>
+            <Route path="dashboard" element={<AdminDashboard/>}/>
+            <Route path="calendar" element={<Calender/>}/>
+            <Route path="chats" element={<GroupChat/>}/>
+            <Route path="courses" element={<Courses/>}/>
+            <Route path="charts" element={<Analytics/>}/>
+            <Route path="tables" element={<DataTable/>}/>
+            <Route path="apps" element={<Widgets/>}/>
+            <Route path="auth" element={<Security/>}/>
+            <Route path="adminprofile" element={<AdminProfile/>}/>
+            <Route path="adminsettings" element={<AdminSettings/>}/>
+            <Route path="help" element={<HelpCenter/>}/>
+            <Route path="notification" element={<NotificationCenter/>}/>
+            </Route>
         </Route>
       </Routes>
     </BrowserRouter>
