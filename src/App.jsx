@@ -25,6 +25,7 @@ import Home from "./pages/Home";
 
 import Login from "./components/Login";
 import Signup from "./components/signup";
+import AllUser from "./admin/AllUser";
 
 export default function App() {
   const [showApp, setShowApp] = useState(false);
@@ -59,6 +60,7 @@ export default function App() {
           <Route path="/admin" element={<AdminLayout/>}>
             <Route index element={<AdminDashboard/>}/>
             <Route path="mailbox" element={<Mailbox/>}/>
+            <Route path="alluser" element={<AllUser/>}/>
             <Route path="dashboard" element={<AdminDashboard/>}/>
             <Route path="calendar" element={<Calender/>}/>
             <Route path="chats" element={<GroupChat/>}/>
