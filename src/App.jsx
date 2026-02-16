@@ -3,6 +3,21 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import EduvionLogo from "./components/EduvionLogo";
 import MainLayout from "./components/MainLayout";
+import AdminLayout from "./admin/AdminLayout";
+import AdminDashboard from "./admin/AdminDashboard";
+import Mailbox from "./admin/Mailbox";
+import { Calendar } from "lucide-react";
+import Calender from "./admin/Calender";
+import GroupChat from "./admin/GroupChat";
+import Courses from "./admin/Courses";
+import Analytics from "./admin/Analytics";
+import DataTable from "./admin/DataTable";
+import Widgets from "./admin/Widgets";
+import Security from "./admin/Security";
+import AdminProfile from "./admin/AdminProfile";
+import AdminSettings from "./admin/AdminSettings";
+import HelpCenter from "./admin/HelpCenter";
+import NotificationCenter from "./admin/NotificationCenter";
 
 // Pages
 
@@ -33,13 +48,14 @@ export default function App() {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
+        </Route>
 
           {/* <Route path="/singup" element={<Singup/>} />
           */}
 
           <Route path="/login" element={<Login />} />
           <Route path="/Singup" element={<Signup />} />
-          
+
           <Route path="/admin" element={<AdminLayout/>}>
             <Route index element={<AdminDashboard/>}/>
             <Route path="mailbox" element={<Mailbox/>}/>
@@ -55,7 +71,7 @@ export default function App() {
             <Route path="adminsettings" element={<AdminSettings/>}/>
             <Route path="help" element={<HelpCenter/>}/>
             <Route path="notification" element={<NotificationCenter/>}/>
-            </Route>
+
         </Route>
       </Routes>
     </BrowserRouter>
