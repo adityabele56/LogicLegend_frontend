@@ -25,7 +25,7 @@ export default function Navbar() {
           <NavLink to={"/admin"}><div className="flex items-center gap-3 cursor-pointer">
             <img src={logo} alt="Eduvion" className="h-12 w-auto" />
             <span className="text-2xl font-semibold text-slate-900">
-              Edu<span className="text-yellow-500">vion</span>
+              Edu<span className="text-yellow-400">vion</span>
             </span>
           </div>
           </NavLink>
