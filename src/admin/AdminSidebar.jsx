@@ -58,14 +58,16 @@ const AdminSidebar = () => {
           className="min-w-[35px]  h-12 rounded-xl flex items-center justify-center shadow-lg"
           
         >
-          <img src={logo} alt="eduvion" />
+          <img src={logo} alt="eduvion" className='bg-transparent h-15 w-auto' />
         </div>
         {!isCollapsed && (
           <motion.span 
             initial={{ opacity: 0 }} animate={{ opacity: 1 }}
             className="text-2xl font-black text-[#1E293B] tracking-tight"
           >
-            Edu<span style={{ color: primaryYellow }}>vion</span>
+            <span className="text-2xl font-semibold text-slate-900">
+              Edu<span className="text-yellow-500">vion</span>
+            </span>
           </motion.span>
         )}
       </div>
