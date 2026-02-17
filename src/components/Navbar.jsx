@@ -3,6 +3,7 @@ import { ChevronDown, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "/eduvion-logo.jpg";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -22,13 +23,13 @@ export default function Navbar() {
         {/* Logo + Desktop Menu */}
         <div className="flex items-center gap-10">
           {/* Logo */}
-          <NavLink to={"/admin"}><div className="flex items-center gap-3 cursor-pointer">
+          <Link to={"/admin"}><div className="flex items-center gap-3 cursor-pointer">
             <img src={logo} alt="Eduvion" className="h-12 w-auto" />
             <span className="text-2xl font-semibold text-slate-900">
               Edu<span className="text-yellow-400">vion</span>
             </span>
           </div>
-          </NavLink>
+          </Link>
 
           {/* Desktop Menu */}
           <ul className="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-700">
